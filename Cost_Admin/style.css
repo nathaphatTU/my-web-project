@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#1A1919, 95%, blue);
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.intro {
+	position: fixed;
+	z-index: 1;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(black, 88%, blue);
+	transition: 1s;
+}
+
+.logo-header {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #D9DCD6;
+}
+
+.logo-intro {
+	position: relative;
+	display: inline-block;
+	bottom: -20px;
+	opacity: 1;
+    font-family: "Karantina";
+    font-size: 2.5rem;
+}
+
+.logo.active {
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+	bottom: 0;
+	opacity: 0;
+	transition: ease-in-out 0.5s;
+}
+
+.navbar .menu a:hover {
+    color: #EB8317;
+}
+
+header {
+    top: 0%;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-family: "Karantina";
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    font-family: "Anton";
+    display: flex;
+    gap: 2rem;
+}
+
+h1 {
+    position: fixed;
+    top: 10%;
+    left: 2.5%;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto Flex", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" -10,
+      "wdth" 100,
+      "GRAD" 0,
+      "XOPQ" 96,
+      "XTRA" 400,
+      "YOPQ" 116,
+      "YTAS" 750,
+      "YTDE" -250,
+      "YTFI" 600,
+      "YTLC" 500,
+      "YTUC" 725;
+}
+
+.TotalCost_Rectangle {
+    box-sizing: border-box;     
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 20%;
+    top: 25vh;   
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.TotalCost_Rectangle h2 {
+    font-family: Anton ;
+    font-size: 2rem;
+    position: absolute;
+    color: white;
+    left: 15%;
+    top: 25%;
+}
+
+.TotalCost_Rectangle h3 {
+    font-family: Anton ;
+    font-size: 2rem;
+    position: absolute;
+    color: white;
+    left: 65%;
+    top: 65%;
+}
+
+.TotalShuttlecock_Rectangle {
+    box-sizing: border-box;      
+    position: absolute;
+    width: 280px;
+    height: 250px;
+    left: 40%;
+    top: 25vh; 
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.TotalShuttlecock_Rectangle h2 {
+    font-family: Anton ;
+    font-size: 2rem;
+    position: absolute;
+    color: white;
+    left: 12%;
+    top: 25%;
+}
+
+.TotalUser_Rectangle {
+    box-sizing: border-box;        
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 60%;
+    top: 25vh; 
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.TotalUser_Rectangle h2 {
+    font-family: Anton ;
+    font-size: 2rem;
+    position: absolute;
+    color: white;
+    left: 15%;
+    top: 25%;
+}
+
+.Search{
+    position: fixed;
+    display: flex;
+    top: 70vh;
+    left: 82%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.search-bar-wrapper {
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px;
+    background-color: #fff;
+    padding: 5px;
+}
+  
+.field {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+  
+.bx-search {
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #771dff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.Table {
+    box-sizing: border-box;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 60%;
+    top: 100vh; 
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 40px;
+}
