@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>s
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,48 +12,61 @@
     <title>LobbyPage</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
         
-    <header>
+    <nav>
 
-        <div class="navbar">
+        <div class="container">
+            
+            <div class="nav-con">
 
-            <div class="logo">
-                <a href="/HomePage/Home.html">BGMS.</a>
+                <div class="logo">
+                    <a href="/HomePage/Home.html">BGMS.</a>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="/LobbyPage/Lobby.html">LOBBY</a></li>
+                    <li><a href="/MatchPage/Match.html">MATCH</a></li>
+                    <li><a href="/CostPage/Cost.html">COST</a></li>
+                    <li><a href="/LeaderboardPage/Leaderboard.html">LEADERBOARD</a></li>
+                    <li><a href="/MemberPage/Member.html">MEMBER</a></li>
+                </ul>
+
             </div>
 
-            <ul class="menu">
-                <li><a href="Lobby.html">LOBBY</a></li>
-                <li><a href="/MatchPage/Match.html">MATCH</a></li>
-                <li><a href="/CostPage/Cost.html">COST</a></li>
-                <li><a href="/LeaderboardPage/Leaderboard.html">LEADERBOARD</a></li>
-                <li><a href="/MemberPage/Member.html">MEMBER</a></li>
-            </ul>
-
         </div>
 
-    </header>
+    </nav>
 
-    <h1>CHECKED IN</h1>
+    <div class="topsite">
 
-    <div class="CheckedIn">
-        <a>Checked In</a>
-    </div>
+        <div class="container">
 
-    <div class="Search">
+            <div class="pagetitle">
+                <h1>CHECKED IN</h1>
+            </div>
 
-        <div class="search-bar-wrapper">
-
-          <input type="text" placeholder="Search" class="field">
-          <button class='bx bx-search'></button>
+            <div class="CheckedIn">
+                <h3>Checked In</h3>
+            </div>
 
         </div>
 
     </div>
 
-    <div class="bgImage">
-        <img id="bgImage1" src="image 1.png">
-        <img id="bgImage2" src="image 2.png">
+    <div class="container">
+
+        <div class="Search">
+
+            <div class="search-bar-wrapper">
+                <input type="text" placeholder="Search" class="field">
+                <button class='bx bx-search'></button>
+            </div>
+
+        </div>
+
     </div>
 
 </body>

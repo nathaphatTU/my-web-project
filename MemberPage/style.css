@@ -5,98 +5,59 @@
 }
 
 body {
-    background: linear-gradient(#1A1919, 95%, blue);
-    height: 100vh;
+    background-color: #1A1919;
 }
 
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.25rem;
-}
-
-.intro {
-	position: fixed;
-	z-index: 1;
-	left: 0%;
-	top: 0%;
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient(black, 88%, blue);
-	transition: 1s;
-}
-
-.logo-header {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #D9DCD6;
-}
-
-.logo-intro {
-	position: relative;
-	display: inline-block;
-	bottom: -20px;
-	opacity: 1;
-    font-family: "Karantina";
-    font-size: 2.5rem;
-}
-
-.logo.active {
-	bottom: 0;
-	opacity: 1;
-	transition: ease-in-out 0.5s;
-}
-
-.logo.fade {
-	bottom: 0;
-	opacity: 0;
-	transition: ease-in-out 0.5s;
-}
-
-.navbar .menu a:hover {
-    color: #EB8317;
-}
-
-header {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    padding: 0 2rem;
-}
-
-.navbar {
-    width: 100%;
-    height: 60px;
+.container {
+    max-width: 1140px;
     margin: 0 auto;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: black;
+}
+
+.nav-con {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.navbar .logo a {
+.logo a {
     font-family: "Karantina";
-    font-size: 2.25rem;
-    font-weight: bold;
-}
-
-.navbar .menu {
-    font-family: "Anton";
-    display: flex;
-    gap: 2rem;
-}
-
-h1 {
-    position: fixed;
-    top: 10%;
-    left: 2.5%;
+    color: white;
     text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Anton";
+    font-size: 20px;
+    letter-spacing: .05rem;
+}
+
+.menu li a:hover {
+    color: #EB8317;
+}
+
+.topsite .pagetitle {
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 2rem;
     color: white;
     font-family: "Roboto Flex", serif;
     font-optical-sizing: auto;
@@ -116,35 +77,32 @@ h1 {
       "YTUC" 725;
 }
 
-.CheckedIn {
-    width: 12%;
-    height: 70px;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,4,162,1) 40%);
-    position: fixed;
-    top: 8%;
-    left: 87%;
-    border-radius: 20px;
-    outline: .05rem solid;
-    outline-color: white;
-}
-
-.CheckedIn a {
-    left: 91%;
-    top: 10%;
-    position: fixed;
-    font-family: "Anton";
-    font-size: 1.5rem;
-}
-
-.Search{
-    position: fixed;
+.topsite .container {
     display: flex;
-    top: 17vh;
-    left: 83.5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topsite .totalmatches {
+    color: white;
+    padding: 1rem;
+    margin-right: 2rem;
+    font-family: "Anton";
+    letter-spacing: .05rem;
+    display: inline-block;
+    background: linear-gradient(90deg, #141414 0%, #040087 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.Search {
+    position: fixed;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
+}
+
 .search-bar-wrapper {
     min-width: 300px;
     display: flex;
@@ -155,7 +113,7 @@ h1 {
     background-color: #fff;
     padding: 5px;
 }
-  
+
 .field {
     width: 100%;
     padding: 10px 20px;
@@ -173,3 +131,4 @@ h1 {
     cursor: pointer;
     border-radius: 50%;
 }
+
